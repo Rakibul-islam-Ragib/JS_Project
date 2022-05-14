@@ -1,0 +1,70 @@
+html{
+    background: url(./moon.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.clock{
+    width: 20rem;
+    height: 20rem;
+    border: 10px solid rgb(233, 218, 87);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+    0 0 0 2px rgb(204, 170, 57),
+    inset 0 0 0 3px rgba(219, 201, 201, 0.13),
+    inset 0 0 0 10px black,
+    ;
+
+}
+
+.clock-body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.clockWork{
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all ;
+    
+
+}
+.second-hand{
+    width: 50%;
+    height: 3px;
+    background: rgb(223, 181, 40);
+    
+    
+}
+
+.min-hand{
+    width: 40%;
+    height: 5px;
+    background: rgb(223, 181, 50);
+    left: 30px;
+}
+
+.hour-hand{
+    width: 30%;
+    height: 6px;
+    background: rgb(223, 181, 43);
+    left: 65px;
+}
+

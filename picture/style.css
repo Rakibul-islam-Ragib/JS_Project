@@ -1,0 +1,35 @@
+:root{
+    --color: red;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+*{
+    background: rgb(21, 7, 34);
+    text-align: center;
+    color: aliceblue;
+    font-family: "Dank Mono", "Fira Code";
+    font-size: 40px;
+    font-weight: 600;
+}
+
+span{
+    color: var(--color);
+}
+blur{
+    filter:blur(var(--blur)) ;
+}
+img{
+
+    height: 60vh;
+    padding: var(--spacing);
+    background: var(--color);
+    filter:blur(var(--blur)) ;
+}
+.controls{
+    margin-bottom: 60px;
+}
+
+input{
+    width: 200px;
+}
